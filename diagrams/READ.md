@@ -1,0 +1,1 @@
+This folder will contain the diagrams for the Campus Hostel Booking and Management System, including the Use Case Diagram, Class Diagram, Activity Diagram, Sequence Diagram and Entity Relationship Diagram (ERD).
