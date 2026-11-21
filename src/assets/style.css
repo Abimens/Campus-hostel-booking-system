@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+.hero {
+    background: linear-gradient(135deg, #102a43, #247ba0);
+    color: white;
+    min-height: 400px;
+    padding: 25px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn {
+    background: #f4a261;
+    color: #102a43 !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-content {
+    margin-top: 100px;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.btn-light {
+    background: white;
+    color: #102a43 !important;
+}
+
+.container {
+    padding: 50px 8%;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #102a43;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.cards article {
+    flex: 1;
+    min-width: 220px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cards h3 {
+    color: #247ba0;
+    margin-bottom: 12px;
+}
+
+.cards p {
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #102a43;
+    color: white;
+}
+/* ===== Styling for inner pages (login, register, hostels, dashboards, payments) ===== */
+body:has(> h2) {
+    margin: 0;
+    padding: 32px 20px;
+    background: #f1f5f9;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+body:has(> h2) > * {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body:has(> h2) > h2 {
+    color: #14405f;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+body:has(> h2) > h3 {
+    color: #14405f;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+body:has(> h2) a {
+    color: #1b6ca8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+body:has(> h2) a:hover {
+    text-decoration: underline;
+}
+
+body:has(> h2) > form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+body:has(> h2) form:has(br) br {
+    display: none;
+}
+
+body:has(> h2) form:has(br) input {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 14px;
+}
+
+body:has(> h2) input,
+body:has(> h2) select {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    margin: 4px 6px 4px 0;
+}
+
+body:has(> h2) button {
+    background: #14405f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+body:has(> h2) button:hover {
+    background: #f4a261;
+    color: #14405f;
+}
+
+body:has(> h2) td button {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+body:has(> h2) > table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body:has(> h2) th {
+    background: #14405f;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px;
+    border: none;
+}
+
+body:has(> h2) td {
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+body:has(> h2) tr:hover td {
+    background: #f8fafc;
+}
+
+@media (max-width: 700px) {
+    body:has(> h2) > table {
+        display: block;
+        overflow-x: auto;
+    }
+}
